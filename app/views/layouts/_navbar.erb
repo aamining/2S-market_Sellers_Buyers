@@ -1,0 +1,23 @@
+<div class="navbar navbar-default navbar-fixed-top navbar-expand-lg" style="background-color: rgba(255, 255, 255, 1); color: black !important">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Rugs and Carpets Store</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <!-- <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+        <li><a href="/sellers/sign_in">Sellers</a></li>
+        <li><a href="/buyers/sign_in">Buyers</a></li>
+        <li> <%= link_to 'Log Out', destroy_buyer_session_path, method: :delete%></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
